@@ -1,0 +1,12 @@
+server:
+  port: 8761 # port on which eureka server will be available
+
+spring:
+  application:
+    name: netflix-eureka-server # name of eureka server
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: falsec
+

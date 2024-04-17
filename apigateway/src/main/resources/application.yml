@@ -1,0 +1,13 @@
+spring.application.name: api-gateway
+
+server:
+  port: 9090
+  max-http-request-header-size: 40KB
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    prefer-ip-address: true
+  client.service-url.defaultZone: http://localhost:8761/eureka/
+
+
